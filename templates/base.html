@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <link rel='stylesheet' href="{% static 'css/settings.css' %}" type='text/css' media='all'/>
+    <link rel='stylesheet' href="{% static 'css/reset.css'%}" type='text/css' media='all'/>
+    <link rel='stylesheet' href="{% static 'css/wordpress.css'%}" type='text/css' media='all'/>
+    <link rel='stylesheet' href="{% static 'css/animation.css'%}" type='text/css' media='all'/>
+    <link rel='stylesheet' href="{% static 'css/magnific-popup.css'%}" type='text/css' media='all'/>
+    <link rel='stylesheet' href="{% static 'css/ui-custom.css'%}" type='text/css' media='all'/>
+    <link rel='stylesheet' href="{% static 'css/mediaelementplayer-legacy.min.css'%}" type='text/css' media='all'/>
+    <link rel='stylesheet' href="{%static 'css/flexslider.css'%}" type='text/css' media='all'/>
+    <link rel='stylesheet' href="{% static 'css/tooltipster.css'%}" type='text/css' media='all'/>
+    <link rel='stylesheet' href="{% static 'css/hw-parallax.css'%}" type='text/css' media='all'/>
+    <link rel='stylesheet' href="{% static 'css/screen.css'%}" type='text/css' media='all'/>
+    <link rel='stylesheet' href="{% static 'css/font-awesome.min.css'%}" type='text/css' media='all'/>
+    <link rel='stylesheet' href="{% static 'css/kirki-styles.css'%}" type='text/css' media='all'/>
+    <link rel='stylesheet' href="{% static 'css/grid.css'%}" type='text/css' media='all'/>
+    <link rel='stylesheet' href="{% static 'css/datepicker.css'%}" type='text/css' media='all'/>
+    <link rel='stylesheet' href="{% static 'css/style.css'%}" type='text/css' media='all'/>
+
+    <link rel='stylesheet'
+          href='https://fonts.googleapis.com/css?family=Playfair+Display%3A400%2C700%2C400italic&#038;subset=latin%2Ccyrillic-ext%2Cgreek-ext%2Ccyrillic'
+          type='text/css' media='all'/>
+    <link rel='stylesheet'
+          href='https://fonts.googleapis.com/css?family=Lato%3A100%2C200%2C300%2C400%2C600%2C700%2C800%2C900%2C400italic&#038;subset=latin%2Ccyrillic-ext%2Cgreek-ext%2Ccyrillic'
+          type='text/css' media='all'/>
+    <link rel='stylesheet'
+          href='https://fonts.googleapis.com/css?family=Kristi%3A100%2C200%2C300%2C400%2C600%2C700%2C800%2C900%2C400italic&#038;subset=latin%2Ccyrillic-ext%2Cgreek-ext%2Ccyrillic'
+          type='text/css' media='all'/>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato%7CKristi&#038;subset' type='text/css'
+          media='all'/>
+    <link href="http://fonts.googleapis.com/css?family=Kristi:400%7CLato:300%2C400" rel="stylesheet"
+          property="stylesheet" type="text/css" media="all">
+</head>
+<body>
+{% include 'header.html' %}
+{% block content %}
+{% endblock %}
+
+{% include 'frooter.html' %}
+
+<!--JavaScript File Linkup-->
+<script src="{% static 'js/jquery.js'%}"></script>
+<script src="{% static 'js/jquery-migrate.min.js'%}"></script>
+<script src="{% static 'js/plugins/jquery.blockUI.min.js'%}"></script>
+<script src="{% static 'js/plugins/js.cookie.min.js'%}"></script>
+<script src="{% static 'js/plugins/jquery.magnific-popup.js'%}"></script>
+<script src="{% static 'js/plugins/jquery.easing.js'%}"></script>
+<script src="{% static 'js/plugins/waypoints.min.js'%}"></script>
+<script src="{% static 'js/plugins/jquery.isotope.js'%}"></script>
+<script src="{% static 'js/plugins/jquery.masory.js'%}"></script>
+<script src="{% static 'js/plugins/jquery.tooltipster.min.js'%}"></script>
+<script src="{% static 'js/plugins/hw-parallax.js'%}"></script>
+<script src="{% static 'js/plugins/jquery.stellar.min.js'%}"></script>
+<script src="{% static 'js/plugins/jquery.resizeimagetoparent.min.js'%}"></script>
+<script src="{% static 'js/plugins/custom_plugins.js'%}"></script>
+<script src="{% static 'js/plugins/custom.js'%}"></script>
+<script src="{% static 'js/plugins/core.min.js'%}"></script>
+<script src="{% static 'js/plugins/datepicker.min.js'%}"></script>
+<script src="{% static 'js/plugins/custom-date.js'%}"></script>
+<script src="{% static 'js/plugins/jquery.timepicker.js'%}"></script>
+<script src="{% static 'js/plugins/custom-time.js'%}"></script>
+<script src="{% static 'js/plugins/jquery.flexslider-min.js'%}"></script>
+<script src="{% static 'js/plugins/jquery.validate.js'%}"></script>
+<script type='text/javascript'>
+    var tgAjax = {
+        "ajaxurl": "#",
+        "ajax_nonce": "c5281db0c2"
+    };
+</script>
+<script src="{% static 'js/jquery-migrate.min.js'%}"></script>
+<script src="{% static 'js/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js'%}"></script>
+<script src="{% static 'js/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js'%}"></script>
+<script src="{% static 'js/plugins/revslider/public/assets/js/extensions/revolution.extension.slideanims.min.js'%}"></script>
+<script src="{% static 'js/plugins/revslider/public/assets/js/extensions/revolution.extension.layeranimation.min.js'%}"></script>
+<script src="{% static 'js/plugins/revslider/public/assets/js/extensions/revolution.extension.kenburn.min.js'%}"></script>
+<script src="{% static 'js/plugins/revslider/public/assets/js/extensions/revolution.extension.navigation.min.js'%}"></script>
+<script src="{% static 'js/plugins/revslider/public/assets/js/extensions/revolution.extension.parallax.min.js'%}"></script>
+<script src="{% static 'js/plugins/revslider/public/assets/js/extensions/revolution.extension.actions.min.js'%}"></script>
+<script src="{% static 'js/plugins/revslider/public/assets/js/extensions/revolution.extension.video.min.js'%}"></script>
+<script src="{% static 'js/plugins/jquery.flexslider-min.js'%}"></script>
+<script src="{% static 'js/plugins/flex.min.js'%}"></script>
+<script src="{% static 'js/plugins/custom_onepage.js'%}"></script>
+<!--<script src='js/plugins/odometer.min.js'></script>-->
+<script src="{% static 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBCmVhK5ZjYRjzAe-e9ZKS1mA3NBPuViwQ'%}"></script>
+<script src="{% static 'js/plugins/jquery.simplegmaps.min.js'%}"></script>
+<script src="{% static 'js/plugins/script-map.js'%}"></script>
+<script src="{% static 'js/plugins/quform/js/plugins.js'%}"></script>
+<script src="{% static 'js/plugins/quform/js/scripts.js'%}"></script>
+</body>
+</html>

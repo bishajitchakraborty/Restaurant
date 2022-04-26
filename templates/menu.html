@@ -1,0 +1,171 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content%}
+<div class="home page-template-default page page-id-2 woocommerce-no-js">
+    <div id="page_caption" class="hasbg parallax baseline ">
+        <div class="parallax_overlay_header"></div>
+        <div id="bg_regular" style="background-image:url('/static/upload/abreakey-raw-foodphotography-squid-still-life.jpg');"></div>
+        <div class="page_title_wrapper baseline" data-stellar-ratio="1.3">
+            <div class="page_title_inner baseline">
+                <h1 class="withtopbar">
+                 <span class="ppb_title_first" >Our</span>Menu  </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="ppb_wrapper hasbg withtopbar">
+        <div class="one withsmallpadding ppb_text" style="text-align:center;padding:50px 0 50px 0;">
+            <div class="standard_wrapper">
+                <div class="page_content_wrapper">
+                    <div class="inner">
+                        <div style="margin:auto;width:60%">
+                            </p>
+                            <div style="font-size:30px;text-transform:uppercase;letter-spacing:-1px;font-weight:300;">Until I discovered cooking I was never really interested in anything</div>
+                            <div class="post_detail">Our Founder John Phillipe</div>
+                            <p><span style="font-family:Kristi;font-size:40px;font-weight:600;">John Phillipe</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ppb_portfolio one nopadding " style="padding:0px 0 0px 0;">
+            <div class="page_content_wrapper fullwidth">
+            <div class="portfolio_filter_wrapper four_cols gallery portfolio-content section content clearfix">
+                  {% for me in menu %}
+                        <div class="element classic3_cols">
+                            <div class="one_fourth gallery4 filterable grid_image static animated1">
+                                <div id="portfolio_desc_3196" class="portfolio_desc grid_image portfolio4 filterable ">
+                                    <div class="grid_image_frame">
+                                        <div id="menu_3196" class="menu_content_classic center">
+                                            <h5 class="menu_post">
+                                                <span class="menu_title">{{me.title}}</span>
+                                            </h5>
+                                            <div class="post_detail menu_excerpt">{{me.subTitle}}</div>
+                                            <br class="clear" />
+                                            <br/><span class="menu_price">{{me.price}}</span></div>
+                                    </div>
+                                </div><img src={{me.image}} alt="" /></div>
+                        </div>
+                 {% endfor %}
+
+<!--                    <div class="element classic3_cols">-->
+<!--                        <div class="one_fourth gallery4 filterable grid_image static animated2">-->
+<!--                            <div id="portfolio_desc_3197" class="portfolio_desc grid_image portfolio4 filterable ">-->
+<!--                                <div class="grid_image_frame">-->
+<!--                                    <div id="menu_3197" class="menu_content_classic center">-->
+<!--                                        <h5 class="menu_post">-->
+<!--                                            <span class="menu_title">Baked Potato Pizza</span>-->
+<!--                                        </h5>-->
+<!--                                        <div class="post_detail menu_excerpt">Potato / Bread / Cheese</div>-->
+<!--                                        <br class="clear" />-->
+<!--                                        <br/><span class="menu_price">$12</span>-->
+<!--                                        <div class="menu_highlight"><i class="fa fa-star"></i></div>-->
+<!--                                        <div class="menu_order"><a href="#">Order</a></div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div><img src="{% static 'upload/dl_00_01_021-400x400.jpg'%}" alt="" /></div>-->
+<!--                    </div>-->
+<!--                    <div class="element classic3_cols">-->
+<!--                        <div class="one_fourth gallery4 filterable grid_image static animated3">-->
+<!--                            <div id="portfolio_desc_3190" class="portfolio_desc grid_image portfolio4 filterable ">-->
+<!--                                <div class="grid_image_frame">-->
+<!--                                    <div id="menu_3190" class="menu_content_classic center">-->
+<!--                                        <h5 class="menu_post">-->
+<!--                                            <span class="menu_title">Italian Source Mushroom</span>-->
+<!--                                        </h5>-->
+<!--                                        <div class="post_detail menu_excerpt">Mushroom / Garlic / Veggies</div>-->
+<!--                                        <br class="clear" />-->
+<!--                                        <br/><span class="menu_price">$19.9</span>-->
+<!--                                        <div class="menu_order"><a href="#">Order</a></div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div><img src="{% static 'upload/7311365-400x400-1433934292.jpg'%}" alt="" /></div>-->
+<!--                    </div>-->
+<!--                    <div class="element classic3_cols">-->
+<!--                        <div class="one_fourth gallery4 filterable grid_image static animated4">-->
+<!--                            <div id="portfolio_desc_3191" class="portfolio_desc grid_image portfolio4 filterable last">-->
+<!--                                <div class="grid_image_frame">-->
+<!--                                    <div id="menu_3191" class="menu_content_classic center">-->
+<!--                                        <h5 class="menu_post">-->
+<!--                                            <span class="menu_title">Fried Potatoes With Garlic</span>-->
+<!--                                        </h5>-->
+<!--                                        <div class="post_detail menu_excerpt">Potatoes / Olive Oil / Garlic</div>-->
+<!--                                        <br class="clear" />-->
+<!--                                        <br/><span class="menu_price">$12</span>-->
+<!--                                        <div class="menu_order"><a href="#">Order</a></div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div><img src="{% static 'upload/slide-02_tom-aikens-food-photography-400x400-1433934211.jpg'%}" alt="" /></div>-->
+<!--                    </div>-->
+<!--                    <div class="element classic3_cols">-->
+<!--                        <div class="one_fourth gallery4 filterable grid_image static animated5">-->
+<!--                            <div id="portfolio_desc_3192" class="portfolio_desc grid_image portfolio4 filterable ">-->
+<!--                                <div class="grid_image_frame">-->
+<!--                                    <div id="menu_3192" class="menu_content_classic center">-->
+<!--                                        <h5 class="menu_post">-->
+<!--                                            <span class="menu_title">Tuna Roast Source</span>-->
+<!--                                        </h5>-->
+<!--                                        <div class="post_detail menu_excerpt">Tuna / Potatoes / Rice</div>-->
+<!--                                        <br class="clear" />-->
+<!--                                        <br/><span class="menu_price">$24.5</span>-->
+<!--                                        <div class="menu_highlight"><i class="fa fa-star"></i></div>-->
+<!--                                        <div class="menu_order"><a href="#">Order</a></div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div><img src="{% static 'upload/greg-400x400-1433934437.jpg'%}" alt="" /></div>-->
+<!--                    </div>-->
+<!--                    <div class="element classic3_cols">-->
+<!--                        <div class="one_fourth gallery4 filterable grid_image static animated6">-->
+<!--                            <div id="portfolio_desc_3193" class="portfolio_desc grid_image portfolio4 filterable ">-->
+<!--                                <div class="grid_image_frame">-->
+<!--                                    <div id="menu_3193" class="menu_content_classic center">-->
+<!--                                        <h5 class="menu_post">-->
+<!--                                            <span class="menu_title">Roast Pork (4 Sticks)</span>-->
+<!--                                        </h5>-->
+<!--                                        <div class="post_detail menu_excerpt">Pork / Veggies / Shoyu</div>-->
+<!--                                        <br class="clear" />-->
+<!--                                        <br/><span class="menu_price">$15.5</span>-->
+<!--                                        <div class="menu_order"><a href="#">Order</a></div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div><img src="{% static 'upload/indian-food-with-chapatti-rice-curries-vegetables-papad-pickle-payasam-f4-400x400-1433934381.jpg'%}" alt="" /></div>-->
+<!--                    </div>-->
+<!--                    <div class="element classic3_cols">-->
+<!--                        <div class="one_fourth gallery4 filterable grid_image static animated7">-->
+<!--                            <div id="portfolio_desc_3194" class="portfolio_desc grid_image portfolio4 filterable ">-->
+<!--                                <div class="grid_image_frame">-->
+<!--                                    <div id="menu_3194" class="menu_content_classic center">-->
+<!--                                        <h5 class="menu_post">-->
+<!--                                            <span class="menu_title">Salted Fried Chicken</span>-->
+<!--                                        </h5>-->
+<!--                                        <div class="post_detail menu_excerpt">Chicken / Olive Oil / Salt</div>-->
+<!--                                        <br class="clear" />-->
+<!--                                        <br/><span class="menu_price">$20</span>-->
+<!--                                        <div class="menu_order"><a href="#">Order</a></div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div><img src="{% static 'upload/plae_bistro_ad_food_photography_milwaukee_advertising_photographer_appleton_wisconsin_culinary_photography_retouching_preparation_cuisine_11-400x400-1433934411.jpg'%}" alt="" /></div>-->
+<!--                    </div>-->
+<!--                    <div class="element classic3_cols">-->
+<!--                        <div class="one_fourth gallery4 filterable grid_image static animated8">-->
+<!--                            <div id="portfolio_desc_3195" class="portfolio_desc grid_image portfolio4 filterable last">-->
+<!--                                <div class="grid_image_frame">-->
+<!--                                    <div id="menu_3195" class="menu_content_classic center">-->
+<!--                                        <h5 class="menu_post">-->
+<!--                                            <span class="menu_title">Crab With Curry Sources</span>-->
+<!--                                        </h5>-->
+<!--                                        <div class="post_detail menu_excerpt">Crab / Potatoes / Rice</div>-->
+<!--                                        <br class="clear" />-->
+<!--                                        <br/><span class="menu_price">$24.5</span>-->
+<!--                                        <div class="menu_order"><a href="#">Order</a></div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div><img src="{% static 'upload/223_1r140806_eat_spots_sobanndls-400x400-1433934069.jpg'%}" alt="" /></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
